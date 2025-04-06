@@ -1,3 +1,4 @@
+import { ExternalLink } from '../ExternalLink';
 import styles from './styles.module.css';
 
 export function Footer() {
@@ -6,9 +7,12 @@ export function Footer() {
       <a href=''>How the Pomodoro technique works</a>
       <a>
         Pomodoro &copy;{new Date().getFullYear()} - Made with S2 by {''}
-        <a className={styles.portfolio} href='https://www.magiero.com.br/'>
+        <ExternalLink
+          className={styles.portfolio}
+          href='https://www.magiero.com.br/'
+        >
           João Magiero
-        </a>
+        </ExternalLink>
       </a>
     </footer>
   );
